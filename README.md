@@ -17,7 +17,7 @@ You can see a demonstration at [ember-youtube.surge.sh](http://ember-youtube.sur
 [travis-badge-url]: https://travis-ci.org/oskarrough/ember-youtube
 
 
-## Quick start
+[Short description of the addon.]
 
 Inside your Ember CLI project run:
 
@@ -190,26 +190,31 @@ export default Ember.Component.extend({
 
 On iOS autoplay of videos is disabled by Apple to save your precious data. I haven't been able to circumvent this. The user needs to tap the video itself before we can call the player's play/load methods. If anyone has a workaround, let me know.
 
-## Development
+### Installation
 
-* `git clone` this repository
-* `yarn`
-* `ember server`
-* Visit your app at http://localhost:4200.
+* `git clone <repository-url>`
+* `cd ember-youtube`
+* `yarn install`
 
 ### Linting
 
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+* `yarn lint:js`
+* `yarn lint:js --fix`
 
 ### Running tests
 
 * `ember test` – Runs the test suite on the current Ember version
 * `ember test --server` – Runs the test suite in "watch mode"
-* `npm test` – Runs `ember try:each` to test your addon against multiple Ember versions
+* `yarn test` – Runs `ember try:each` to test your addon against multiple Ember versions
 
-**Please file an issue if you have any feedback or would like to contribute.**
+### Running the dummy application
 
-Thanks to https://github.com/oskarrough/ember-youtube/graphs/contributors.
+* `ember serve`
+* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
+
+For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+
+License
+------------------------------------------------------------------------------
 
 This project is licensed under the [MIT License](LICENSE.md).
