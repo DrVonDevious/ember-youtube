@@ -9,7 +9,7 @@ import {
 } from '@ember/object';
 import { or } from '@ember/object/computed';
 import { debug } from '@ember/debug';
-import { run } from '@ember/runloop';
+import { schedule } from '@ember/runloop';
 import { task } from 'ember-concurrency';
 
 export default Component.extend({
@@ -90,7 +90,7 @@ export default Component.extend({
     const delegate = this.get('delegate');
     const delegateAs = this.get('delegate-as');
 
-    run.schedule('afterRender', () => {
+    schedule('afterRender', () => {
       if (!delegate) {
         return;
       }
