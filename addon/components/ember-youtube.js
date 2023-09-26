@@ -7,6 +7,7 @@ import {
   setProperties,
   observer,
 } from '@ember/object';
+import { or } from '@ember/object/computed';
 import { debug } from '@ember/debug';
 import { run } from '@ember/runloop';
 import { task } from 'ember-concurrency';
@@ -26,7 +27,7 @@ export default Component.extend({
   showControls: false,
   showDebug: false,
   showProgress: false,
-  showExtras: computed.or('showControls', 'showProgress', 'showDebug'),
+  showExtras: or('showControls', 'showProgress', 'showDebug'),
 
   player: null,
   playerState: 'loading',
